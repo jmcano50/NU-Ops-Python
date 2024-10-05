@@ -1,0 +1,29 @@
+#Wk4 Python Task 1
+# Script Name:                  Week Four - Python Lab
+# Author:                       Juan Miguel Cano
+# Date of latest revision:      09/27/2024      
+# Purpose:                      This Python script calculates an employee's gross pay. 
+# Resource:                    Severance, C. R. (n.d.). Python for everybody: Exploring data using Python 3. Retrieved from
+#                               https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf
+
+""" This Python program calculates how much an employee should be paid based 
+on the number of hours they worked and their hourly rate. If they worked more than 
+40 hours, the program adds overtime pay at 1.5 times the regular hourly rate 
+for any extra hours. The program prompts the user to enter the hours worked and the 
+hourly rate, it uses float() to convert the input into numbers, and then calculates 
+the gross pay, including overtime. Finally, it prints the total gross pay."""
+
+# Prompt user for hours and rate
+hours = float(input("Enter hours worked: "))
+rate_per_hour = float(input("Enter rate per hour: "))
+
+# Overtime Conditions
+if hours > 40:
+    overtime_hours = hours - 40
+    gross_pay = (40 * rate_per_hour) + (overtime_hours * rate_per_hour * 1.5)
+else:
+    gross_pay = hours * rate_per_hour
+
+# Print result
+print("Gross Pay:", gross_pay)
+
