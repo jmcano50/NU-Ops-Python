@@ -1,0 +1,22 @@
+# Script Name:                  Week Three - Python Lab
+# Author:                       Juan Miguel Cano
+# Date of latest revision:      09/17/2024      
+# Purpose:                      This Python script prompt the user for hours and rate per hour using input to compute gross pay.
+# Resource:                    Severance, C. R. (n.d.). Python for everybody: Exploring data using Python 3. Retrieved from
+#                               https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf
+
+# Prompt the user for hours worked
+hours = input("Enter Hours: ")
+# Convert the input to a float
+hours = float(hours)
+
+# Prompt the user for the rate per hour
+rate = input("Enter Rate per Hour: ")
+# Convert the input to a float
+rate = float(rate)
+
+# Calculate gross pay
+gross_pay = hours * rate
+
+# Print the result
+print("Gross Pay:", gross_pay)
