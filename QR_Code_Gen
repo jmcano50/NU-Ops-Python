@@ -1,0 +1,29 @@
+# Script Name:                  QR Code 
+# Author:                       Juan Miguel Cano
+# Date of latest revision:      10/0519/2024      
+# Purpose:                      This Program creates QR Codes. 
+# Resources:                     - ChatGPT
+
+import qrcode
+
+def create_qr_code(data, filename):
+    # Create QR code instance with the given data
+    qr = qrcode.QRCode(
+        version=1,  # Controls the size of the QR Code (1 is the smallest)
+        error_correction=qrcode.constants.ERROR_CORRECT_L,
+        box_size=10,  # Size of each box in the QR code grid
+        border=4  # Minimum is 4 for QR codes
+    )
+    qr.add_data(data)
+    qr.make(fit=True)
+
+    # Create an image from the QR Code instance
+    img = qr.make_image(fill_color="black", back_color="white")
+    img.save(filename)
+    print(f"QR Code saved as {filename}")
+
+if __name__ == "__main__":
+    # Get user input for the data and filename
+    data = input("Enter the data you want to encode into the QR Code: ")
+    filename = input("Enter the filename to save the QR Code image (e.g., 'qrcode.png'): ")
+    create_qr_code(data, filename)

@@ -2,7 +2,7 @@
 # Author:                       Juan Miguel Cano
 # Date of latest revision:      09/17/2024      
 # Purpose:                      This Python script prompt the user for hours and rate per hour using input to compute gross pay.
-# Resource:                    Severance, C. R. (n.d.). Python for everybody: Exploring data using Python 3. Retrieved from
+# Resource:                     Severance, C. R. (n.d.). Python for everybody: Exploring data using Python 3. Retrieved from
 #                               https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf
 
 # Prompt the user for hours worked

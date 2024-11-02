@@ -3,8 +3,10 @@
 # Author:                       Juan Miguel Cano
 # Date of latest revision:      09/27/2024      
 # Purpose:                      This Python script calculates an employee's gross pay. 
-# Resource:                    Severance, C. R. (n.d.). Python for everybody: Exploring data using Python 3. Retrieved from
+# Resource:                     Severance, C. R. (n.d.). Python for everybody: Exploring data using Python 3. Retrieved from
 #                               https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf
+
+
 
 """ This Python program calculates how much an employee should be paid based 
 on the number of hours they worked and their hourly rate. If they worked more than 
